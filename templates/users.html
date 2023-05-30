@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{%block body%}
+    <h1>Cadastro de Usuários</h1>
+    <form method="POST" action="/users">
+        <label>Nome: <input type="text" name="nome"></label><br>
+        <label>Email: <input type="email" name="email"></label><br>
+        <label>Senha: <input type="password" name="senha"></label><br>
+        <input type="submit" value="Cadastrar">
+    </form>
+{%endblock%}
